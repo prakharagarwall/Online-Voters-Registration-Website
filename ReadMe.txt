@@ -1,4 +1,7 @@
-                              Steps for execution of project
+I have designed this project using C#, .Net framework, HTML, CSS, JavaScipt, JQuery and Microsoft SQL Management Server.
+It's functionality is to reduce the man power, the voters can directly register here on the website for voting, this projects does not have much functionality, it was just a practice when I was learning and going through C# and .Net. 
+
+				Steps for execution of project
                             -----------------------------------
 s
 1. Install sql2012 & visual studio 2012.
