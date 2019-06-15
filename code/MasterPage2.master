@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 99%;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+        .auto-style3 {
+            height: 50px;
+        }
+        .auto-style6 {
+            height: 427px;
+            }
+        .auto-style7 {
+            width: 100%;
+            height: 395px;
+        }
+        .auto-style8 {
+            width: auto;
+            height: 420px;
+        }
+        .auto-style10 {
+            width: 14719px;
+            height: 420px;
+        }
+        .auto-style11 {
+            width: 476px;
+            height: 420px;
+        }
+    </style>
+</head>
+<body style="height: 648px; background-image:url('bg1.jpg'); width: 1352px;">
+
+    <form id="form1" runat="server">
+        <table class="auto-style1" style="border-style: none; border-color: inherit; border-width: 0; border-spacing: 0px; padding: 0px; margin: 0px; height: 638px;">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Image ID="Image1" runat="server" Height="126px" ImageUrl="~/images/header.jpg" Width="1346px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    
+                    <table class="auto-style7" style="padding: 0px; margin: 0px">
+                        <tr>
+                            <td class="auto-style11" style="text-align: center">
+<asp:Image ID="Image2" runat="server" Height="96px" ImageUrl="~/images/logo.jpg" style="margin-right: 0px; margin-top: 0px" Width="144px" />
+                                <marquee direction="up" scrollamount="4" onmouseover="this.setAttribute('scrollamount',0,0);" onmouseout="this.setAttribute('scrollamount',4,0);">
+                                    <br /><br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">Recent Link 1</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="#">Recent Link 2</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="#">Recent Link 3</asp:HyperLink></marquee><br />
+                    <br />
+                   
+                                <asp:ImageButton ID="ImageButton1" runat="server" Height="35px" ImageUrl="~/images/homepageicon.png" PostBackUrl="~/homepage1.aspx" Width="131px" />
+                            </td>
+                            <td class="auto-style8" style="border-width: thin; border-color: #D2D2D2; text-align: center; border-right-style: solid;">
+                            </td>
+                            <td class="auto-style10">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" style="text-align: center"><b>Copyright © 2015. Design By: 2Prakhar agarwal</b></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

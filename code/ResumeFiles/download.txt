@@ -1,0 +1,24 @@
+<tr>
+<td class="auto-style22" colspan="4" style="background-color: #FFFFCC" >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Download Resume</asp:LinkButton>
+                        </td>
+                    </tr>
+
+
+
+resumename = dtt.Rows[0]["resume_name"].ToString();
+resumepath = "ResumeFiles" + "/" + resumename;
+
+
+
+	String filename = Server.MapPath(resumepath);
+        FileInfo f1 = new FileInfo(filename);
+        Response.Clear();
+        Response.AddHeader("Content-Disposition", "attachement;filename=" + f1.Name);
+        Response.AddHeader("Content-Length", f1.Length.ToString());
+        Response.End();
+
+
+
+

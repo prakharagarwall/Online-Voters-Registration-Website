@@ -1,0 +1,7 @@
+responce.redirect("<script> alert("Please enterv no")</script>");
+
+
+change master page of student login
+change searching method
+add download link
+change button into hyperlink
